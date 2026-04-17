@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>統計初学者のためのJS</title>
+</head>
+<link rel="stylesheet" href="../basics.css">
+<style>
+  body{
+    background-color: #e0fff3;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .main{
+    background: azure;
+    border: double 3px blue;
+  }
+  
+  .stage{
+    color: green;
+  }
+
+  /* .graph {
+  max-width: 100px;
+  max-height: 100px;
+  } */
+
+</style>
+
+<body>
+
+<div class="main"> 
+<button type="button" id="stairs_button">少しずつ増加するデータをつくる</button><br>
+<button type="button" id="errors_button">増加していくが誤差の強いデータをつくる</button><br>
+<button type="button" id="random_button">完全ランダムのデータをつくる</button><br>
+</div>
+
+<div class="middle"> 
+<canvas id="graph" width="400" height="400"></canvas>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js" defer></script>
+<script src="statistics.js" defer></script>
+</html>
